@@ -30,7 +30,7 @@ class Neighborhood {
       });
     }
   }
-  
+
   class Customer {
     constructor(name, neighborhoodId){
       this.name = name;
@@ -38,14 +38,13 @@ class Neighborhood {
       this.id = ++customerId;
       store.customers.push(this);
     }
-  
+
   //returns all the deliveries that customer has received
     deliveries(){
       return store.deliveries.filter(delivery => delivery.customerId === this.id);
     }
-  
+
   //returns all meals that a customer has ordered
     meals(){
       return this.deliveries().map(delivery => delivery.meal())
     }
-
