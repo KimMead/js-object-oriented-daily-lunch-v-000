@@ -25,10 +25,10 @@ class Neighborhood {
   // returns list of meals that have been ordered in a neighborhhood
 class Customer {
   constructor(name, neighborhoodId){
-    this.name = name; 
-    this.neighborhoodId = neighborhoodId; 
-    this.id = ++customerId; 
-    store.customers.push(this); 
+    this.name = name;
+    this.neighborhoodId = neighborhoodId;
+    this.id = ++customerId;
+    store.customers.push(this);
   }
 }
 
