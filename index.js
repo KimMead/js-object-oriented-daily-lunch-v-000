@@ -22,7 +22,7 @@ class Neighborhood {
   customers(){
     return store.customers.filter(customer => customer.neighborhood === this.id);
   }
-  // returns list of meals that have been ordered in a neighborhhood 
+  // returns list of meals that have been ordered in a neighborhhood
   meals(){
     let meals = this.deliveries().map(delivery => delivery.meal());
     return meals.filter(function(meal, index, meals) {
