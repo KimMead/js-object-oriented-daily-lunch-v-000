@@ -18,5 +18,11 @@ class Neighborhood {
     return store.deliveries.filter(delivery => delivery.neighborhood === this.id);
   }
 
+  // returns list of customers that live in a neighborhood 
+  customers(){
+    return store.customers.filter(customer => customer.neighborhood === this.id);
+    
+  }
+
 
 }
