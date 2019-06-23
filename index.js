@@ -24,7 +24,7 @@ class Neighborhood {
   }
   // returns list of meals that have been ordered in a neighborhhood
   meals(){
-    
+
     return meals.filter(function(meal, index, meals) {
       return meals.indexOf(meal) === index;
     });
