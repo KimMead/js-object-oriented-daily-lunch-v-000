@@ -23,7 +23,7 @@ class Neighborhood {
     return store.customers.filter(customer => customer.neighborhood === this.id);
   }
   // returns list of meals that have been ordered in a neighborhhood
-  
+
 
 
 
